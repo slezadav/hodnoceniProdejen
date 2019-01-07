@@ -1,0 +1,29 @@
+1.1 Image
+1.1.1 osobní dojem OÚ
+1.1.2 osobní dojem P
+1.1.3 pracovní dojem P
+1.1.4 pracovní oděv P
+1.1.5 ochranné pomůcky
+1.2 Znalostní kapitál
+1.2.1 odborná znalost výrobku OÚ
+1.2.2 aktvní nabídka OÚ - novinky a akce
+1.2.3 aktvní nabídka P - věrnostní karta atd.
+1.2.4 osobní manipulace se sortimentem OÚ
+1.2.5 osobní manipulace se sortimentem P
+1.2.6 obecný přehled
+1.3 Sociální kapitál
+1.3.1 pozdrav OÚ
+1.3.2 pozdrav P
+1.3.3 rychlost obsluhy OÚ
+1.3.4 rychlost obsluhy P
+1.3.5 aktivní komunikace OÚ
+1.3.6 aktivní komunikace P
+1.3.7 schopnost poradit OÚ
+1.3.8 schopnost poradit P
+1.3.9 ochota,vstřícnost OÚ
+1.3.10 ochota,vstřícnost P
+1.3.11 úsměv,nálada
+2.1 pečivo
+2.1.1 šířka a hloubka
+2.1.2 úroveň nabídky
+2.1.3 označení a popis položky
