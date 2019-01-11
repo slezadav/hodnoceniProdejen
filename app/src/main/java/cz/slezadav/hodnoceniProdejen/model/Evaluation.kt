@@ -59,7 +59,6 @@ object Evaluation {
 
         var dir = File(
             Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)
-            //  if ("jpg" == ext) Environment.DIRECTORY_PICTURES else Environment.DIRECTORY_MOVIES)
             , "Hodnocení prodejen"
         )
         if (!dir.exists()) {
@@ -90,12 +89,10 @@ object Evaluation {
             append(storeName + "\n" + inspectorName + "\n")
         }
         items.forEach {
-            it.subparts.forEach { subpart ->
-                res.append(subpart.score.toString())
-                res.append(",")
+            it.subparts.forEachIndexed {index, subpart ->
+                res.append(subpart.getScoreAsString())
+                res.append("\n")
             }
-            res.dropLast(1)
-            res.append(";")
         }
         return res.toString()
     }

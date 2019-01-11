@@ -41,8 +41,8 @@ class FormPageFragment : Fragment() {
         ui = this
         item.subparts.forEachIndexed { index, it ->
             DataBindingUtil.inflate<FormRowBinding>(inflater, R.layout.form_row, ui.rowContainer, true).apply {
-                if (it.score != 0f) {
-                    radio1.radioGroup.findViewWithTag<View>(it.score.toString())?.let{
+                if (it.score != -1f) {
+                    radio1.radioGroup.findViewWithTag<View>(it.getScoreAsString())?.let{
                         radio1.radioGroup.check(it.id)
                     }
 
@@ -51,10 +51,24 @@ class FormPageFragment : Fragment() {
                 radio1.radioGroup.setOnCheckedChangeListener { group, checkedId ->
                     Evaluation.items[Evaluation.items.indexOf(item)].subparts[index].score = group.findViewById<View>(
                         checkedId
-                    )?.tag?.toString()?.toFloat() ?: 0f
+                    )?.tag?.toString()?.toFloat() ?: -1f
                 }
             }
         }
+        var last = item == Evaluation.items.last()
+        ui.finishButton.text = if(last) "Uložit a zavřít" else "Další"
+        ui.finishButton.setOnClickListener {
+            if(last) {
+                activity?.finish()
+            }else{
+                val frag =  ( (activity as? FormListActivity?)?.supportFragmentManager?.findFragmentByTag("pagerFragment") as? FormDetailFragment?)
+                frag?.ui?.pager?.let {
+                    it.setCurrentItem(it.currentItem+1,true)
+                }
+
+            }
+        }
+
         if (!(activity as FormListActivity).twoPane) {
             (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
             (activity as AppCompatActivity).supportActionBar?.setDisplayShowHomeEnabled(true)

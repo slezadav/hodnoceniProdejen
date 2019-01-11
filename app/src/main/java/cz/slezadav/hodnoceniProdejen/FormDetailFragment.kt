@@ -23,7 +23,7 @@ class FormDetailFragment : Fragment() {
      */
    // private var item: FormPart? = null
 
-    private lateinit var ui: FragmentScreenSlidePageBinding
+    lateinit var ui: FragmentScreenSlidePageBinding
     private var adapter: FormPagerAdapter? = null
     var initIndex = 0
 

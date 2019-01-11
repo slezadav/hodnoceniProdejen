@@ -1,5 +1,6 @@
 package cz.slezadav.hodnoceniProdejen
 
+import android.content.Context
 import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             }
             false
         })
+        ui.inputInspector.setText(getPreferences(Context.MODE_PRIVATE).getString("last_inspector",""))
         if (!PermissionManager.hasStoragePermission(this)) {
             PermissionManager.requestStoragePermission(this)
         }
@@ -43,6 +45,13 @@ class MainActivity : AppCompatActivity() {
         Evaluation.reset(this@MainActivity)
         Evaluation.inspectorName = ui.inputInspector.text.toString()
         Evaluation.storeName = ui.inputStore.text.toString()
+
+        val sharedPref = getPreferences(Context.MODE_PRIVATE)
+        with (sharedPref.edit()) {
+            putString("last_inspector", Evaluation.inspectorName)
+            apply()
+        }
+
         startActivity(Intent(this,FormListActivity::class.java))
     }
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {

@@ -27,3 +27,64 @@
 2.1.1 šířka a hloubka
 2.1.2 úroveň nabídky
 2.1.3 označení a popis položky
+2.2 ovoce a zelenina
+2.2.1 šířka a hloubka
+2.2.2 úroveň nabídky
+2.2.3 ozn. a popis
+2.3 mléčné výrobky
+2.3.1 šířka a hloubka
+2.3.2 úroveň nabídky
+2.3.3 ozn. a popis
+2.4 ostatní chlaz.sort.
+2.4.1 šířka a hloubka
+2.4.2 úroveň nabídky
+2.4.3 ozn. a popis
+2.5 OÚ-maso a uzeniny
+2.5.1 šířka a hloubka
+2.5.2 úroveň nabídky
+2.5.3 ozn. a popis
+2.6 OÚ-sýry
+2.6.1 šířka a hloubka
+2.6.2 úroveň nabídky
+2.6.3 ozn. a popis
+2.7 OÚ-saláty,zákusky..
+2.7.1 šířka a hloubka
+2.7.2 úroveň nabídky
+2.7.3 ozn. a popis
+2.8 mražené výrobky
+2.8.1 šířka a hloubka
+2.8.2 úroveň nabídky
+2.8.3 ozn. a popis
+2.9 běžné regály
+2.9.1 šířka a hloubka
+2.9.2 úroveň nabídky
+2.9.3 ozn. a popis
+2.10 speciální regály
+2.10.1 šířka a hloubka
+2.10.2 úroveň nabídky
+2.10.3 ozn. a popis
+2.11 ohrožený sort.
+2.11.1 ozn. a umístění
+2.11.2 dodržování podm.
+2.12 pokladní zóna
+2.12.1 úroveň nabídky
+3.1 akce
+3.1.1 ozn. akčního sortimentu
+3.1.2 umístění akčního sortimentu
+3.1.3 přítomnost akčního sortimentu
+3.2 marketingová komunikace
+3.2.1 propagace akce na prodejně
+3.2.2 propagace sítě
+3.2.3 obchodní komunikace prodejny
+3.2.4 marketingové aktivity dodavatelů
+3.2.5 provozně-technické informace
+3.2.6 sociální marketing
+4.0 interiér
+4.0.1 vstupní zóna
+4.0.2 osvětlení prodejny
+4.0.3 podlahy a stěny
+4.0.4 běžné regály
+4.0.5 speciální regály
+4.0.6 obslužný úsek
+4.0.7 chladicí a mrazicí zařízení
+4.0.8 pokladní zóna

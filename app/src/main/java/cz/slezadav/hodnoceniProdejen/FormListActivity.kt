@@ -111,7 +111,7 @@ class FormListActivity : AppCompatActivity() {
 
             parentActivity.supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.form_detail_container, fragment)
+                .replace(R.id.form_detail_container, fragment,"pagerFragment")
                 .commit()
             parentActivity.findViewById<View>(R.id.form_detail_container).visibility = View.VISIBLE
             if (!twoPane) {
